@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrwy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/logo.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: black;
+            overflow-x: hidden;
+        }
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        a {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .blue {
+            background: #3c31dd;
+        }
+        .red {
+            background: #dd3f31;
+        }
+        .lblue {
+            background: #059978;
+        }
+        .purple {
+            background: #9826c9;
+        }
+        .purple {
+            background: black;
+        }
+        .curve {
+            position: absolute;
+            height: 250px;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            transform: translate(85%, 60%);
+            background-color: black;
+        }
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #115ad8;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+        .spacer {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .layer1 {
+            background-image: url('./layer1.svg');
+        }
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(131% + 1.3px);
+            height: 388px;
+        }
+
+        .wave .shape-fill {
+            fill: #059978 ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="lblue">
+        <div>
+            <h1 id="title"></h1>
+            <script>
+                var i = 0;
+                var txt = 'jeffrwy 🎨';
+                var speed = 150;
+                
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("title").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                typeWriter()
+            </script>
+        </div>
+        <h2>Unprofessional Artist☑️</h2>
+    </section>
+    <section class='black'>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h1>Who am I 🤔</h1>
+        <p>hello! i'm jeffrwy, a broke teenager on the internet trying to make some money off drawing pictures for people :D i've been drawing for almost my entire life and enjoy pop culture art like video games and cartoons. My goal has always been to prove the people who told me that art was a useless skill wrong while making some money on the way. if you would like to help me on my journey keep scrolling. and if you don't, keep scrolling anyways because you might find something you like ;)</p>
+        <h1>Prices 💵</h1>
+        <p>One of my goals for my art is to make it high quality while it being at a affordable price to make people like be able to use my service.</p>
+        <hr size="8" width="90%" color="white">  
+        <p>$5-10 for a pfp</p>
+        <p>$10 for full illustration</p>
+        <p>$15 for detailed background</p>
+    </section>
+    <section class="black">
+        <h1>My Art 🖼️</h1>
+        <h2>Full Illistration Example</h2>
+        <img src="https://cdn.discordapp.com/attachments/749312809220964422/898757278801477652/unknown.png" alt="Full Illistration">
+        <p></p>
+        <hr size="8" width="90%" color="white">  
+        <p></p>
+        <img src="https://cdn.discordapp.com/attachments/749312809220964422/898758048447881256/unknown.png" alt="art1">
+        <p></p>
+        <hr size="8" width="90%" color="white"> 
+        <p></p> 
+        <img src="https://cdn.discordapp.com/attachments/749312809220964422/898757946043957299/unknown.png" alt="art2">
+        <p></p>
+        <hr size="8" width="90%" color="white">  
+        <p></p>
+        <img src="https://cdn.discordapp.com/attachments/749312809220964422/898756679204765706/unknown.png" alt="art3">
+        <p></p>
+        <hr size="8" width="90%" color="white">  
+        <p></p>
+        <img src="https://cdn.discordapp.com/attachments/749312809220964422/898757901508829184/unknown.png" alt="art4">
+        <p></p>
+        <hr size="8" width="90%" color="white">  
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="lblue">
+        <h1>Contact Me / Socials🗣️</h1>
+        <p>Email: coming soon 📧</p>
+        <p>Discord:</p>
+        <img src="https://discord.c99.nl/widget/theme-1/536713510462160931.png" alt="jeffrwy#7234">  
+        <p></p>
+        <a href="https://steamcommunity.com/profiles/76561198877764209">Steam🎮</a>
+        <a href="https://www.youtube.com/jeffrwy">Youtube📺</a>
+        <a href="https://www.instagram.com/jeffrwychenart/">Instagram📷</a>
+        <p></p>
+        <h2>By LabGuy94</h2>
+    </section>
+</body>
+</html>
